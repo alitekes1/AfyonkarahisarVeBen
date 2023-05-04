@@ -1,0 +1,14 @@
+
+#navbar-items{
+float: left;
+}
+.navbar-brand{
+    font-size: 25px;
+    font-weight: 150;
+}
+.btn-outline-success{
+    background-color: azure;
+}
+.navbar{
+    position: fixed; 
+}
