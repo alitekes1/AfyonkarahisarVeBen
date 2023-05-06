@@ -1,2 +1,2 @@
-# sakarya-ve-ben
- Sakarya Üniversite Web Teknolojileri Proje ödevi için sevdiğim şehri ve kendimi tanıttığım site.
+# Afyonkarahisar-ve-ben
+HTML,CSS, JavaScript dillerini öğrenmek ve geliştirmek hem de Sakarya Üniversite Bilgisayar Mühendisliği Web Teknolojileri dersi Proje ödevi için sevdiğim şehri ve kendimi tanıttığım site.
