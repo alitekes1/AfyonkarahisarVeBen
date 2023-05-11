@@ -9,6 +9,19 @@
 
 .navbar {
     justify-content: flex-end;
+    background-size: 7px;
+    width: 100%;
+    padding-top: 0.2rem;
+    float: right;
+    height: 60px;
+}
+
+.ustmenu {
+    z-index: 999;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 70px;
 }
 
 .container-fluid {
@@ -32,6 +45,7 @@
 body {
     margin: 0;
     overflow-x: hidden;
+
 }
 
 .footer {
@@ -88,4 +102,21 @@ body {
     .footer .row a i {
         margin: 0% 3%;
     }
+}
+
+.cardboyut {
+    width: "286px";
+    height: "214px";
+}
+
+section {
+    display: inline;
+}
+
+element.style {
+    width: 18rem;
+}
+
+.bg-dark {
+    height: 10%;
 }
