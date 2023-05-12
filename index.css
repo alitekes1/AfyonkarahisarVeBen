@@ -13,7 +13,7 @@
     width: 100%;
     padding-top: 0.2rem;
     float: right;
-    height: 80px;
+    height: 70px !important; 
 }
 
 .ustmenu {
