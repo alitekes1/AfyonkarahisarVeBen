@@ -155,13 +155,7 @@ element.style {
     width: 100%;
 }
 
-aside {
-    background-color: antiquewhite;
-    border-radius: 10px;
-    padding: 25px;
-    height: 200px!important;
-    width: auto!important;
-}
+
 
 .ustbosluk {
     padding-top: 100px;
@@ -175,4 +169,10 @@ td {
 a{
     text-decoration: none;
     color: #050505;
+}
+.col-sm-3{
+    background-color: antiquewhite;
+    border-radius: 10px;
+    height: auto!important;
+    width: auto!important;
 }
