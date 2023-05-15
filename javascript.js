@@ -1,0 +1,1 @@
+let degisken=document.getElementById("#merhaba");
