@@ -128,8 +128,30 @@ body {
     .footer .row a i {
         margin: 0% 3%;
     }
+
 }
 
+@media screen and (max-width: 768px) {
+    .movies img {
+        vertical-align: middle;
+        height: 150px;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .movies { 
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-left: 10px;
+    }
+    .movies img{
+        height: 200px;
+        margin-left: -3px;
+        margin-right: 21px;
+    }
+}
 .cardboyut {
     width: auto;
     height: "214px";
@@ -159,18 +181,21 @@ element.style {
     padding-top: 100px;
 }
 
-th,td {
+th,
+td {
     text-align: center;
     /* hücre içeriğini ortalamak için */
 }
-a{
+
+a {
     text-decoration: none;
     color: #050505;
 }
-.col-sm-3{
+
+.col-sm-3 {
     background-color: antiquewhite;
     border-radius: 10px;
-    height: auto!important;
-    width: auto!important;
+    height: auto !important;
+    width: auto !important;
     margin-right: 20px;
 }

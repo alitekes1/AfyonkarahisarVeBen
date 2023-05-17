@@ -111,9 +111,10 @@ textarea {
 }
 
 .movies img {
-    height: 190px;
-    width: 11%;
-    margin-left: 12px;
+    vertical-align: middle;
+    height: 150px;
+    margin-left: 10px;
+    margin-top: 5px;
 }
 
 .movies ul {
