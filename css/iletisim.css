@@ -1,0 +1,133 @@
+.footer {
+    background: #050505;
+    padding: 30px 0px;
+    font-family: 'Play', sans-serif;
+    bottom: 0;
+    text-align: center;
+}
+
+.footer .row {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: gray;
+    font-size: 0.8em;
+}
+
+.footer .row a {
+    text-decoration: none;
+    color: gray;
+    transition: 0.5s;
+}
+
+.footer .row a:hover {
+    color: #fff;
+}
+
+.footer .row ul {
+    width: 100%;
+}
+
+.footer .row ul li {
+    display: inline-block;
+    margin: 0px 30px;
+}
+
+.footer .row a i {
+    font-size: 2em;
+    margin: 0% 1%;
+}
+
+.form-bg {
+    height: 100%;
+    width: auto;
+}
+
+.login-satir {
+    height: 600px;
+    width: 100%;
+}
+
+.photo-container {
+    border: 2px solid black;
+    padding: 10px;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+form,
+select {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.form-elemanlari {
+    margin-top: 15px;
+    font-size: 15px;
+    width: 250px;
+    border: solid black;
+
+}
+
+textarea {
+    margin-top: 15px;
+    width: 330px;
+    height: 285px;
+    resize: none;
+    border: double black;
+}
+
+.label-date {
+    margin-left: 0px;
+
+}
+
+#date {
+    margin-top: 15px;
+    margin-left: 10px;
+    width: 220px;
+    border: inset;
+}
+
+.radiobtn {
+    width: 30px;
+}
+
+.img-oval {
+    border-radius: 2%;
+    height: "580px";
+}
+
+.col-sm-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonlar {
+    margin-top: 550px;
+    width: 250px;
+}
+
+.movies img {
+    height: 190px;
+    width: 11%;
+    margin-left: 12px;
+}
+
+.movies ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+
+.movies li {
+    margin-right: 10px;
+    place-items: center;
+    /* İstediğiniz boşluk miktarı */
+}
+.ali img{
+    height: 470px;
+    width: 100%;
+}

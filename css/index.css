@@ -172,50 +172,5 @@ a{
     border-radius: 10px;
     height: auto!important;
     width: auto!important;
-}
-.form-bg{
-    height: 100%;
-    width:auto;
-}
-.login-satir{
-    height: 600px;
-    width: 100%;
-}
-.photo-container {
-    border: 2px solid black;
-    padding: 10px;
-    display: inline-block;
-    max-width: 100%;
-    height: auto;
-}
-form,select{
-    text-align: center;
-    margin-top: 5px;
-}
-.form-elemanlari{
-    margin-top: 15px;
-    margin-left: 50px;
-    font-size:15px;
-    width: 250px;
-}
-textarea{
-    margin-top: 15px;
-    width: 330px;
-    height: 275px;
-    resize: none;
-}
-.label-date{
-    margin-left: 50px;
-
-}
-#date{
-    margin-top: 15px;
-    margin-left: 10px;
-    width: 200px;
-}
-.radiobtn{
-    width: 30px;
-}
-.img-oval{
-    border-radius: 2%;
+    margin-right: 20px;
 }
