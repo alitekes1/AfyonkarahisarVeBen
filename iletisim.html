@@ -65,21 +65,41 @@
     <div class="container">
         <div class="row ">
             <div class="col-sm-4">
-                <div style="text-align: center; height: 630px;">
+                <div class="carosel">
                     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="images/depositphotos_18568069-stock-photo-entrance-of-afyon-kocatepe-university.jpg"
-                                    class="d-block w-100 img-oval" 
-                                    alt="...">
+                                <img src="images/d0.jpg" class="d-block w-100 img-oval" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="images/depositphotos_18568069-stock-photo-entrance-of-afyon-kocatepe-university.jpg"
-                                    class="d-block w-100 img-oval" alt="...">
+                                <img src="images/d1.jpeg" class="d-block w-100 img-oval" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="images/dikeyfoto.jpg"
-                                    class="d-block w-100 img-oval" alt="...">
+                                <img src="images/d2.jpeg" class="d-block w-100 img-oval" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/d3.jpeg" class="d-block w-100 img-oval" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/d4.jpeg" class="d-block w-100 img-oval" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/d5.jpeg" class="d-block w-100 img-oval" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/d6.jpeg" class="d-block w-100 img-oval" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/d7.jpg" class="d-block w-100 img-oval" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/d8.jpg" class="d-block w-100 img-oval" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/d9.jpg" class="d-block w-100 img-oval" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/d10.jpeg" class="d-block w-100 img-oval" alt="...">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
@@ -102,59 +122,55 @@
                         <input type="image" name="afyonimg" id="afyonimg" src="images/Logo_3807.png" height="215px"
                             width="300px"><br>
                     </div>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <form action="#" method="post">
-                                <input type="text" placeholder="Adınız" class="form-elemanlari" autofocus required><br>
-                                <input type="text" placeholder="Soyadınız" class="form-elemanlari" required><br>
+                    <form method="POST" action="iletisimVerileri.php">
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" name="ad" placeholder="Adınız" class="form-elemanlari" autofocus
+                                    required><br>
+                                <input type="text" name="soyad" placeholder="Soyadınız" class="form-elemanlari"
+                                    required><br>
                                 <input type="email" name="email" id="email" required autofocus
                                     placeholder="kullaniciAd@sakarya.edu.tr" class="form-elemanlari"><br>
                                 <label for="yas" class="label-date"> DT:</label><input type="date" id="date"
-                                    class="date"><br>
+                                    class="date" name="dogumtarihi"><br>
                                 <input type="radio" name="cinsiyet" value="Erkek" class="form-elemanlari radiobtn"
-                                    required> Erkek
-                                <input type="radio" name="cinsiyet" value="Kadın" class="form-elemanlari radiobtn"
-                                    required>Kadın<br>
-                                <select name="ogrenimseviyesi" class="form-elemanlari" id="ogrlevel"><br>
-                                    <option value="ogrenci">Öğrenci</option>
-                                    <option value="ogretmen">Öğretmen</option>
-                                    <option value="diger">diğer...</option>
+                                    required> Erkek <input type="radio" name="cinsiyet" value="Kadın"
+                                    class="form-elemanlari radiobtn" required>Kadın<br>
+                                <select name="ogrenimseviyesi" id="ogrlevel" class="form-elemanlari"
+                                    aria-placeholder="Öğrenim Seviyesi">
+                                    <option value="ilkokul">İlkokul</option>
+                                    <option value="ortaokul">Ortaokul</option>
+                                    <option value="lise">Lise</option>
+                                    <option value="üniversite">Üniversite</option>
                                 </select><br>
-                                <input type="text" class="form-elemanlari" list="universiteler"
-                                    placeholder="Üniversite">
-                                <datalist id="universiteler">
-                                    <option value="SAU">
-                                        Sakarya Üniveristesi
-                                    </option>
-                                    <option value="ITU">
-                                        İstanbul Teknik Üniversitesi
-                                    </option>
-                                    <option value="SUBU">
-                                        Sakarya Uyg. Bil. Üniversitesi
-                                    </option>
-                                    <option value="KOU">
-                                        Kocaeli Üniversitesi
-                                    </option>
-                                </datalist><br>
-                            </form>
+                                <select name="meslek" class="form-elemanlari" aria-placeholder="Meslek">
+                                    <option value="Öğrenci"> Öğrenci </option>
+                                    <option value="Öğretmen">Öğretmen</option>
+                                    <option value="Atak-2 Helikopteri"> Atak-2 Helikopteri</option>
+                                    <option value="diger"> diğer</option>
+                                </select><br>
+                                <!------------------------------------------------------------------------------------------------------------------------ -->
+                            </div>
+                            <div class="col-sm-6">
+                                <textarea name="mesaj" id="mesaj" cols="40" rows="10" maxlength="300"
+                                    placeholder="Mesajınız..."></textarea>
+                            </div>
                         </div>
-                        <div class="col-sm-6">
-                            <textarea name="textarea" id="mesaj" cols="40" rows="10" maxlength="200"
-                                placeholder="Mesajınız..."></textarea>
-                        </div>
-                    </div>
-                    <form action="#">
-                        <div class="d-grid gap-2 mt-3 ">
-                            <input type="submit" name="submit" class="btn btn-success" id="submit" value="Gönder"
-                                size="100px">
-                            <input type="reset" class="btn btn-outline-secondary" value="Temizle">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="d-grid gap-2 mt-5 ">
+                                    <input type="submit" name="submit" class="btn btn-success" id="submit"
+                                        value="Gönder" size="100px">
+                                    <input type="reset" class="btn btn-outline-secondary" value="Temizle">
+                                </div>
+                            </div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-
+    </div>
 
     <div class="mt-4">
         <footer style="width: 100%; z-index:0; height:100% ;">
@@ -180,12 +196,11 @@
         </footer>
     </div><!--footer-->
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-
+    <div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+    </div>
 </body>
 
 </html>

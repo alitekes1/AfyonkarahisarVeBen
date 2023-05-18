@@ -29,14 +29,19 @@
         height: 100%;
     }
 }
+.center-a{
 
+align-items: none;}
 .navbar {
-    justify-content: flex-end;
+/*    justify-content: flex-end;
     background-size: 7px;
     width: 100%;
     padding-top: 0.2rem;
     float: right;
     height: 70px !important;
+    color: #ecbcbc;
+    padding: 10px;
+    z-index: 999;*/
 }
 
 .ustmenu {
@@ -138,20 +143,46 @@ body {
         margin-left: 10px;
         margin-top: 5px;
     }
+
+    .movies {
+        justify-content: center;
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    .col-sm-3 {
+        background-color: antiquewhite;
+        border-radius: 10px;
+        height: auto;
+        width: auto;
+        display: contents;
+        padding: 10px;
+    }
 }
+
 @media screen and (min-width: 1024px) {
-    .movies { 
+    .movies {
         display: flex;
         justify-content: center;
         width: 100%;
         margin-left: 10px;
     }
-    .movies img{
+
+    .movies img {
         height: 200px;
         margin-left: -3px;
         margin-right: 21px;
     }
+
+    .col-sm-3 {
+        background-color: antiquewhite;
+        border-radius: 10px;
+        height: auto;
+        width: auto;
+        top: 20px
+    }
 }
+
 .cardboyut {
     width: auto;
     height: "214px";
@@ -170,7 +201,7 @@ element.style {
 }
 
 .resim-boyut {
-    width: 100%;
+    border-radius: 1%;
 }
 
 .sliderBoyut {
@@ -192,10 +223,22 @@ a {
     color: #050505;
 }
 
-.col-sm-3 {
+#asidem {
+    padding: 5px;
+    position: sticky;
+    top: 20px;
+    float: right;
+}
+
+.col-sm-3 ul {
     background-color: antiquewhite;
-    border-radius: 10px;
-    height: auto !important;
-    width: auto !important;
-    margin-right: 20px;
+    border-radius: 10px
+}
+
+.card-img-top {
+    width: auto;
+}
+.ortala{
+    margin-right: 24px;
+    margin-left: 24px;
 }

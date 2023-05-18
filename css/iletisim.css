@@ -63,24 +63,21 @@ select {
 }
 
 .form-elemanlari {
-    margin-top: 15px;
+    margin-top: 10px;
     font-size: 15px;
     width: 250px;
     border: solid black;
-
 }
 
 textarea {
-    margin-top: 15px;
-    width: 330px;
-    height: 285px;
+    margin-top: 10px;
+    width: 270px;
+    height: 260px;
     resize: none;
-    border: double black;
-}
+    border: double black;}
 
 .label-date {
     margin-left: 0px;
-
 }
 
 #date {
@@ -100,7 +97,7 @@ textarea {
 }
 
 .col-sm-6 {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
 }
@@ -109,26 +106,16 @@ textarea {
     margin-top: 550px;
     width: 250px;
 }
-
-.movies img {
-    vertical-align: middle;
-    height: 150px;
-    margin-left: 10px;
-    margin-top: 5px;
-}
-
-.movies ul {
-    list-style-type: none;
-    display: flex;
-    padding: 0;
-}
-
-.movies li {
-    margin-right: 10px;
-    place-items: center;
-    /* İstediğiniz boşluk miktarı */
-}
 .ali img{
     height: 470px;
     width: 100%;
+}
+.row{
+    justify-content: center;
+    align-items: none;
+}
+.carosel{
+    text-align: center;
+    height: 610px;
+    margin-bottom: 20px;
 }
