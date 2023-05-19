@@ -18,9 +18,40 @@
     </div>
 
     <title>İletişim</title>
+
 </head>
 
 <body>
+    <script>
+        function formControl() {
+            var ad = document.forms["form"]["ad"].value.length;
+            var soyad = document.forms["form"]["soyad"].value.length;
+            var mesaj = document.forms["form"]["mesaj"].value.length;
+            var DT = document.forms["form"]["dogumtarihi"].value.length;
+            var ogrenimseviyesi = document.forms["form"]["ogrenimseviyesi"].value.length;
+            var meslek = document.forms["form"]["meslek"].value.length;
+            var cinsiyet = document.forms["form"]["cinsiyet"].value.length;
+            var email = document.forms["form"]["email"].value.length;
+            var istruemail = document.getElementById("email").value;
+
+
+            if (ad == 0 || soyad == 0 || mesaj == 0 || DT == 0 || ogrenimseviyesi == 0 || meslek == 0 || cinsiyet == 0 || email == 0) {
+                alert("Tüm istenenleri doldurmanız gerekmektedir.");
+                return false;
+            }
+            else {
+                if (!(istruemail.includes("@") && istruemail.includes("."))) {
+                    alert("Lutfen geçerli bir mail adresi giriniz."); return false;
+                }
+                else {
+                    return true ;
+                }
+            }
+        }
+    </script>
+
+
+
     <div class="container">
         <div class="row ">
             <nav class="navbar navbar-expand-lg navbar-light bg-transparent ">
@@ -122,28 +153,27 @@
                         <input type="image" name="afyonimg" id="afyonimg" src="images/Logo_3807.png" height="215px"
                             width="300px"><br>
                     </div>
-                    <form method="POST" action="iletisimVerileri.php">
+                    <form method="POST" name="form" action="iletisimVerileri.php" onsubmit="return formControl()">
                         <div class="row">
                             <div class="col">
-                                <input type="text" name="ad" placeholder="Adınız" class="form-elemanlari" autofocus
-                                    required><br>
-                                <input type="text" name="soyad" placeholder="Soyadınız" class="form-elemanlari"
-                                    required><br>
-                                <input type="email" name="email" id="email" required autofocus
-                                    placeholder="kullaniciAd@sakarya.edu.tr" class="form-elemanlari"><br>
+                                <input type="text" name="ad" placeholder="Adınız" class="form-elemanlari" autofocus><br>
+                                <input type="text" name="soyad" placeholder="Soyadınız" class="form-elemanlari"><br>
+                                <input type="text" name="email" id="email" placeholder="kullaniciAd@sakarya.edu.tr"
+                                    class="form-elemanlari"><br>
                                 <label for="yas" class="label-date"> DT:</label><input type="date" id="date"
                                     class="date" name="dogumtarihi"><br>
-                                <input type="radio" name="cinsiyet" value="Erkek" class="form-elemanlari radiobtn"
-                                    required> Erkek <input type="radio" name="cinsiyet" value="Kadın"
-                                    class="form-elemanlari radiobtn" required>Kadın<br>
-                                <select name="ogrenimseviyesi" id="ogrlevel" class="form-elemanlari"
-                                    aria-placeholder="Öğrenim Seviyesi">
+                                <input type="radio" name="cinsiyet" value="Erkek" class="form-elemanlari radiobtn">
+                                Erkek <input type="radio" name="cinsiyet" value="Kadın"
+                                    class="form-elemanlari radiobtn">Kadın<br>
+                                <select name="ogrenimseviyesi" id="ogrlevel" class="form-elemanlari">
+                                    <option disabled selected value="">Öğrenim Seviyesi</option>
                                     <option value="ilkokul">İlkokul</option>
                                     <option value="ortaokul">Ortaokul</option>
                                     <option value="lise">Lise</option>
                                     <option value="üniversite">Üniversite</option>
                                 </select><br>
-                                <select name="meslek" class="form-elemanlari" aria-placeholder="Meslek">
+                                <select name="meslek" class="form-elemanlari">
+                                    <option disabled selected value="">Meslek</option>
                                     <option value="Öğrenci"> Öğrenci </option>
                                     <option value="Öğretmen">Öğretmen</option>
                                     <option value="Atak-2 Helikopteri"> Atak-2 Helikopteri</option>
@@ -152,7 +182,7 @@
                                 <!------------------------------------------------------------------------------------------------------------------------ -->
                             </div>
                             <div class="col-sm-6">
-                                <textarea name="mesaj" id="mesaj" cols="40" rows="10" maxlength="300"
+                                <textarea name="mesaj" value="mesaj" id="mesaj" cols="40" rows="10" maxlength="300"
                                     placeholder="Mesajınız..."></textarea>
                             </div>
                         </div>
