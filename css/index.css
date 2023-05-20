@@ -161,6 +161,10 @@ body {
         display: contents;
         padding: 10px;
     }
+    .fotograf-duzenleindex {
+    border-radius: 1%;
+    text-align: center;
+}
 }
 
 @media screen and (min-width: 1024px) {
@@ -184,6 +188,11 @@ body {
         width: auto;
         top: 20px
     }
+    .fotograf-duzenleindex {
+    height: 685px;
+    border-radius: 1%;
+    text-align: center;
+}
 }
 
 .cardboyut {
@@ -247,8 +256,3 @@ a {
     margin-left: 24px;
 }
 
-.fotograf-duzenleindex {
-    height: 685px;
-    border-radius: 1%;
-    text-align: center;
-}

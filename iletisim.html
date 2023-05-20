@@ -41,10 +41,10 @@
             }
             else {
                 if (!(istruemail.includes("@") && istruemail.includes("."))) {
-                    alert("Lutfen geçerli bir mail adresi giriniz."); return false;
+                    alert("Lütfen geçerli bir mail adresi giriniz. Girilen değerin @ ve . içerdiğinden emin olun."); return false;
                 }
                 else {
-                    return true ;
+                    return true;
                 }
             }
         }
@@ -98,18 +98,18 @@
             <div class="col-sm-4">
                 <div class="carosel">
                     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner fotograf-duzenle">
+                        <div class="carousel-inner fotograf" style="height: 622px;border-radius: 1%;">
                             <div class="carousel-item active">
                                 <img src="images/d5.jpeg" class="d-block w-100 " alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/d-1.jpeg" class="d-block w-100 " alt="...">
                             </div>
                             <div class="carousel-item">
                                 <img src="images/dd.jpeg" class="d-block w-100 " alt="...">
                             </div>
                             <div class="carousel-item">
                                 <img src="images/dd1.jpeg" class="d-block w-100 " alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/d-1.jpeg" class="d-block w-100 " alt="...">
                             </div>
                             <div class="carousel-item">
                                 <img src="images/d4.jpeg" class="d-block w-100 " alt="...">
@@ -154,7 +154,7 @@
                             width="300px"><br>
                     </div>
                     <form method="POST" name="form" action="php/iletisimVerileri.php" onsubmit="return formControl()">
-                        <div class="row">   
+                        <div class="row">
                             <div class="col">
                                 <input type="text" name="ad" placeholder="Adınız" class="form-elemanlari" autofocus><br>
                                 <input type="text" name="soyad" placeholder="Soyadınız" class="form-elemanlari"><br>
@@ -232,5 +232,4 @@
             crossorigin="anonymous"></script>
     </div>
 </body>
-
 </html>

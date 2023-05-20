@@ -119,7 +119,19 @@ textarea {
     height: 610px;
     margin-bottom: 20px;
 }
-.fotograf-duzenle{
-    height: 622px;
-    border-radius: 5px;
+
+
+@media screen and(min-width: 1024px) { 
+
+    .fotograf{
+        height: 622px;
+        border-radius: 5px;
+    }
+}
+@media screen and (max-width: 768px) {
+
+    .fotograf-duzenle{
+        height: 600px;
+        border-radius: 5px;
+    }
 }
