@@ -1,7 +1,7 @@
 fetch("https://imdb8.p.rapidapi.com/auto-complete?q=last", {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '31fc0e8bb5mshbfb4cf5b221ea59p166116jsn4ae0435dda67',
+		'X-RapidAPI-Key': '4aba5e6eaamsh7aa5ee6b2dc388cp140e20jsn95757e0e35d2',
 		'X-RapidAPI-Host': 'imdb8.p.rapidapi.com'
 	}
 })
@@ -18,6 +18,8 @@ fetch("https://imdb8.p.rapidapi.com/auto-complete?q=last", {
 	.catch(err => {
 		console.error(err);
 	});
+
+
 
 
 
